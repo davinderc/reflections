@@ -2,21 +2,39 @@ What happens when you initialize a repository? Why do you need to do it?
 
     Initializing a repository creates the metadata folder for a repository. It needs to be done to create the folder where all the history information is stored.
 
+
 How is the staging area different from the working directory and the repository?
 What value do you think it offers?
 
     The staging area only contains changes that you intend to commit to your repository. This means that whatever is in the staging area can be considered a part of the next commit, and this allows one to think through and plan a commit before committing to it!
 
+
 How can you use the staging area to make sure you have one commit per logical
 change?
+
+    I can see what changes I've made in the staging area and compare them to the current commit, to see whether there are any changes that I don't want in that commit. If there are, I can simply remove them from the staging area before commiting, without losing them, since they will still be in the current working directory.
+
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+    It's helpful to keep the history organized if I need to know the order in which changes were made, or whether changes were made independently of each other (i.e. one or the other, but not both together), and this is where branches would help keep track of these changes.
+
+
 How do the diagrams help you visualize the branch structure?
+
+    Diagrams help me see where commits have branched out from the master branch or other branches. This means I don't have to go looking through the log and comparing to find out when a certain branch was made during development. I can easily spot them on the diagram and identify their id.
+
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
+    When we merge two branches together, we are left with one single branch containing the changes in both branches. We represent it in the diagram because it helps us understand how the previous commits affects the current state of the project.
+
+
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
+
+When merging manually you can make sure that the exact changes you want show up in the final commit, but this takes time. When merging automatically, you don't have to spend time to check everything, but sometimes git won't complete the merge, since it doesn't always know which change to commit when there is more than one change to the same parts of the code.
+
+
