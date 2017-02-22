@@ -3,10 +3,12 @@ local?
 
     With a remote repository, I can share my work with others and allow others to contribute to my project. This wouldn't be possible with a locally kept project.
 
+
 Why might you want to always pull changes manually rather than having Git
 automatically stay up-to-date with your remote repository?
 
-    Fill in your answer here
+    I might not want my files updated while I'm working on them. Once I finish working on my files, I can then pull changes, and see if any conflicts arise.
+
 
 Describe the differences between forks, clones, and branches.  When would you
 use one instead of another?
